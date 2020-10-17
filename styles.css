@@ -23,6 +23,17 @@ body {
   justify-content: center;
 }
 
+.device {
+  width: 375px;
+  height: 812px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .header {
   font-family: 'BBTreeGB';
   font-size: 20px;
@@ -35,15 +46,10 @@ body {
   align-items: center;
 }
 
-.device {
-  width: 375px;
-  height: 812px;
-  background-color: #fafafa;
-  border-radius: 15px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ul {
+  margin: 0;
+  padding: 0px 20px;
+  height: 100%;
 }
 
 .new-memo {
