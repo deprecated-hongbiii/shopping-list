@@ -12,9 +12,4 @@ class Card {
 
 const card = new Card();
 
-const createList = () => {
-  console.log('함수가 실행됨');
-  card.render();
-};
-
-addButton.addEventListener('click', createList);
+addButton.addEventListener('click', card.render);
