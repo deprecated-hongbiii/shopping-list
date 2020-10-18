@@ -66,6 +66,11 @@ li {
   justify-content: space-between;
 }
 
+.delete-button :hover {
+  cursor: pointer;
+  color: #de7e73;
+}
+
 .new-memo {
   display: flex;
   flex-direction: column;

@@ -11,6 +11,7 @@ class Card {
     const deleteButton = document.createElement('div');
     cardContainer.append(deleteButton);
     deleteButton.innerHTML = `<i class="far fa-trash-alt"></i>`;
+    deleteButton.classList.add('delete-button');
   }
 }
 
