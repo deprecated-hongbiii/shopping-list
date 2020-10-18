@@ -15,6 +15,13 @@ class Card {
   }
 }
 
+const activateAddButton = (e) => {
+  e.target.value == ''
+    ? (addButton.disabled = true)
+    : (addButton.disabled = false);
+};
+
 const card = new Card();
 
 addButton.addEventListener('click', card.render);
+input.addEventListener('input', activateAddButton);

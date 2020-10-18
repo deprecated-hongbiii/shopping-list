@@ -86,7 +86,8 @@ input {
   color: #4a4847;
 }
 
-.new-memo__add-button {
+.new-memo__add-button,
+.new-memo__add-button:disabled {
   padding: 0;
   border-style: none;
   background-color: #d9d4cf;
@@ -94,4 +95,9 @@ input {
   font-size: 20px;
   color: #7c7877;
   border-radius: 0px 0px 15px 15px;
+  cursor: pointer;
+}
+
+.new-memo__add-button:disabled {
+  cursor: default;
 }
