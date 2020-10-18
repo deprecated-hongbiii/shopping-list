@@ -74,7 +74,6 @@ li {
 .new-memo {
   display: flex;
   flex-direction: column;
-  transform: translateY(10px);
 }
 
 input {
