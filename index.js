@@ -5,8 +5,12 @@ const addButton = document.querySelector('.new-memo__add-button');
 class Card {
   render() {
     const cardContainer = document.createElement('li');
-    ul.appendChild(cardContainer);
+    ul.append(cardContainer);
     cardContainer.textContent = `${input.value}`;
+
+    const deleteButton = document.createElement('div');
+    cardContainer.append(deleteButton);
+    deleteButton.innerHTML = `<i class="far fa-trash-alt"></i>`;
   }
 }
 
