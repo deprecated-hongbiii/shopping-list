@@ -86,7 +86,7 @@ input {
 }
 
 .new-memo__add-button,
-.new-memo__add-button:disabled {
+.new-memo__add-button :disabled {
   padding: 0;
   border-style: none;
   background-color: #d9d4cf;

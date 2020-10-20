@@ -1,5 +1,6 @@
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
+const li = document.querySelector('li');
 const addButton = document.querySelector('.new-memo__add-button');
 
 class Card {
@@ -8,10 +9,15 @@ class Card {
     ul.append(cardContainer);
     cardContainer.textContent = `${input.value}`;
 
-    const deleteButton = document.createElement('div');
-    cardContainer.append(deleteButton);
-    deleteButton.innerHTML = `<i class="far fa-trash-alt"></i>`;
-    deleteButton.classList.add('delete-button');
+    const renderDeleteButton = document.createElement('div');
+    cardContainer.append(renderDeleteButton);
+    renderDeleteButton.innerHTML = `<i class="far fa-trash-alt"></i>`;
+    renderDeleteButton.classList.add('delete-button');
+  }
+
+  delete() {
+    li.remove();
+    console.log('delete button is clicked');
   }
 }
 
@@ -25,3 +31,6 @@ const card = new Card();
 
 addButton.addEventListener('click', card.render);
 input.addEventListener('input', activateAddButton);
+
+const deleteButton = document.querySelector('.delete-button');
+deleteButton.addEventListener('click', card.delete);
