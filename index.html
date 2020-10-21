@@ -18,7 +18,10 @@
       <header class="header">Shopping List</header>
       <ul class="list"></ul>
       <section class="new-memo">
-        <input type="new-memo__text" />
+        <input
+          type="new-memo__text"
+          onkeypress="if( event.keyCode == 13 ){card.render()}"
+        />
         <button type="button" disabled class="new-memo__add-button">
           <i class="fas fa-plus"></i>
         </button>
